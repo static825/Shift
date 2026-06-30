@@ -4,7 +4,7 @@
 
 as of right now, it supports these games:
 
-- nothing here yet, but wait for more!
+- nothing here yet, but wait for more
 
 ### Script:
 ```lua
