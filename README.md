@@ -2,9 +2,9 @@
 
 **staticsscripts** is a great **keyless** script with **support for many games**!
 
-As of right now, it supports these games:
+as of right now, it supports these games:
 
-- Nothing here yet, but wait for more!
+- nothing here yet, but wait for more!
 
 ### Script:
 ```lua
