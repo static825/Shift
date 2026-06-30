@@ -4,7 +4,7 @@
 
 as of right now, it supports these games:
 
-- 
+- Find the Markers
 
 ### Script:
 ```lua
