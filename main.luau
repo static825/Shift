@@ -1,4 +1,4 @@
-local s, c = pcall(game.HttpGet, game, "https://githubusercontent.com" .. game.GameId .. ".luau")
+local s, c = pcall(game.HttpGet, game, "https://raw.githubusercontent.com/static825/Shift/refs/heads/main/games/" .. game.GameId .. ".luau")
 local f = s and (loadstring(c))
 if f then
     pcall(f)
