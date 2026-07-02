@@ -1,10 +1,11 @@
 # Shift
 
-**Shift** is a great **keyless** script with **support for ~~many~~ games**!
+**Shift** is a great **keyless** script with **support for many games**!
 
 As of right now, it supports these games:
 
 - Murder Mystery 2
+- Universal
 
 ### Script:
 ```lua
