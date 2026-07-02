@@ -1,8 +1,10 @@
-local l = "https://raw.githubusercontent.com/static825/Shift/refs/heads/main/games/"
-local s, r = pcall(request, {Url = l .. game.GameId .. ".luau", Method = "GET"})
+local r = "https://raw.githubusercontent.com/static825/Shift/refs/heads/main/games/"
+local p = game.PlaceId
 
-if s and r.StatusCode == 200 then
-    loadstring(r.Body)()
+if p == 0 then
+    loadstring(game:HttpGet(r .. "WHAT"))()
+elseif p == 1 then
+    loadstring(game:HttpGet(r .. "WHAT"))()
 else
-    pcall(function() loadstring(game:HttpGet(l .. "Universal.luau"))() end)
+    loadstring(game:HttpGet(r .. "Universal.luau"))()
 end
