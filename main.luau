@@ -1,7 +1,8 @@
-local s, c = pcall(game.HttpGet, game, "https://githubusercontent.com" .. game.GameId .. ".luau")
-local f = s and (loadstring(c))
-if f then
-    pcall(f)
+local l = "https://raw.githubusercontent.com/static825/Shift/refs/heads/main/games/"
+local s, r = pcall(request, {Url = l .. game.GameId .. ".luau", Method = "GET"})
+
+if s and r.StatusCode == 200 then
+    loadstring(r.Body)()
 else
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Error", Text = "Game not supported!", Button1 = "OK", Duration = 5})
+    pcall(function() loadstring(game:HttpGet(l .. "Universal.luau"))() end)
 end
